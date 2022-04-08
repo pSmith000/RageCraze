@@ -9,12 +9,6 @@ public class DeathBlockBehavior : MonoBehaviour
     [SerializeField]
     private Transform _playerTwo;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform == _playerOne.transform || other.transform == _playerTwo.transform)
